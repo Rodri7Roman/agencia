@@ -8,17 +8,21 @@ import DotLoader from "react-spinners/DotLoader";
 function Navbar() {
   const [loading, setLoading] = useState(true);
 
-  window.onscroll = function(){scrollFunction()}
+  window.onscroll = function () {
+    scrollFunction();
+  };
 
-  function scrollFunction(){
-    if (document.getElementById('navbar')){
-      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50){
-        document.getElementById('navbar').classList.add('shadow-navbar')
-        document.getElementById('navbar').classList.add('bg-white')
-      }
-      else{
-        document.getElementById('navbar').classList.remove('shadow-navbar')
-        document.getElementById('navbar').classList.remove('bg-white')
+  function scrollFunction() {
+    if (document.getElementById("navbar")) {
+      if (
+        document.body.scrollTop > 50 ||
+        document.documentElement.scrollTop > 50
+      ) {
+        document.getElementById("navbar").classList.add("shadow-navbar");
+        document.getElementById("navbar").classList.add("bg-white");
+      } else {
+        document.getElementById("navbar").classList.remove("shadow-navbar");
+        document.getElementById("navbar").classList.remove("bg-white");
       }
     }
   }
@@ -28,10 +32,10 @@ function Navbar() {
       data-scroll
       data-scroll-id="hey"
       id="navbar"
-      className="w-full py-6 top-0 bg-white shadow-navbar z-40 transition duration-300 ease-in-out z-40 fixed"
+      className="w-full py-6 top-0 transition duration-300 ease-in-out z-40 fixed"
     >
       <div className="px-4 sm:px-6">
-        <div className="-ml-4 -mt-2 flex flex-wrap items-center justify-between sm:flex-nowrap md:px-14 px-2">
+        <div className="-ml-4 -mt-2 hidden lg:flex flex-wrap items-center justify-between sm:flex-nowrap md:px-14 px-2">
           <Link to={"/"} className="ml-4 mt-2">
             <img src={logo} width={50} height={80} />
           </Link>

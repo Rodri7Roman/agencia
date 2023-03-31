@@ -5,15 +5,24 @@ import Header from "components/home/Header";
 import Incentives from "components/home/Incentives";
 import UseCases from "components/home/UseCases";
 import Features from "components/home/Features";
+import CTA from "components/home/CTA";
+import LogoCloud from "components/home/LogoCloud";
+import BlogList from "components/home/BlogList";
 
 function Home() {
   return (
     <Layout>
       <NavBar />
-      <Header/>
-      <Incentives/>
-      <UseCases/>
-      <Features/>
+      <div className="py-28">
+        <Header />
+        <Incentives />
+        <UseCases />
+        <Features />
+        <CTA />
+        <LogoCloud />
+        <BlogList />
+      </div>
+
       <Footer />
     </Layout>
   );
