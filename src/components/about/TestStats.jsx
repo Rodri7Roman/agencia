@@ -5,10 +5,10 @@ const stats = [
   { label: "Raised", value: "$25M" },
 ];
 
-export default function TesStats() {
+export default function TestStats() {
   return (
     <div className="relative bg-white py-16 sm:py-24">
-      <div className="lg:mx-12 lg:grid lg:max-w-full lg:grid-cols-2 lg:items-start lg:gap-24 lg:px-8">
+      <div className="mx-auto lg:mx-12 lg:grid lg:max-w-full lg:grid-cols-2 lg:items-start lg:gap-24 lg:px-8">
         <div className="relative sm:py-16 lg:py-0">
           <div
             aria-hidden="true"
