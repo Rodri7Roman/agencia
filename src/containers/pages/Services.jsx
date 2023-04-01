@@ -5,6 +5,7 @@ import ServicesList from "components/services/ServicesList";
 import Layout from "hocs/layouts/Layout";
 import coding from "assets/images/codificacion.png"
 import { useEffect } from "react";
+
 const posts_software = [
   {
     title: 'Boost your conversion rate',

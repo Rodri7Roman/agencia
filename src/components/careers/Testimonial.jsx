@@ -52,5 +52,4 @@ function Testimonial() {
     </div>
   );
 }
-
 export default Testimonial;
