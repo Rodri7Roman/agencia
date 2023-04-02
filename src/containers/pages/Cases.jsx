@@ -13,7 +13,7 @@ function Cases(){
     return(
         <Layout>
             <Helmet>
-            <title>Murkiva | Case Studies</title>
+            <title>Murkiva | Case Studies </title>
             <meta name="description" content="Agencia de software y marketing digital. Servicios de creacion de pagina web y desarrollo de aplicaciones." />
             <meta name="keywords" content='agencia de software, agencia de marketing, creacion de pagina web' />
             <meta name="robots" content='all' />
